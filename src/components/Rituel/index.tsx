@@ -8,9 +8,9 @@ import good from "../../assets/good.png";
 import cold from "../../assets/cold.png";
 
 import { Checkmark, AlertCircle} from "react-ionicons";
-import { useState } from "react";
+import { useState, ChangeEvent} from "react";
 
-const QUIZZES = [
+/*const QUIZZES = [
     {question: "C’est :", answerOptions: [
         { "answer": "Le printemps", img: printemps},
         { "answer": "L'été", img: summer},
@@ -22,23 +22,23 @@ const QUIZZES = [
         { "answer": "Beau", img: good},
         { "answer": "Froid", img:cold, "isCorrect": true },
       ]},
-]
+]*/
 
 const Rituel = () => {
-    const [correctDate, setCorrectDate] = useState(null)
+    const [correctDate, setCorrectDate] = useState<Boolean | null>(null)
 
-    const handleChangeDay = (e) => {
+    const handleChangeDay = (e: ChangeEvent<HTMLInputElement>) => {
         const d = new Date();
         let day = d.getDate();
         setCorrectDate(parseInt(e.target.value) === day)
     };
-    const handleChangeMonth = (e) => {
+    const handleChangeMonth = (e: ChangeEvent<HTMLInputElement>) => {
         const d = new Date();
         let month = d.getMonth() + 1;
         console.log(month, e.target.value);
         setCorrectDate(parseInt(e.target.value) === month)
     };
-    const handleChangeYear = (e) => {
+    const handleChangeYear = (e: ChangeEvent<HTMLInputElement>) => {
         const d = new Date();
         let year = d.getFullYear();
         setCorrectDate(parseInt(e.target.value) === year)
