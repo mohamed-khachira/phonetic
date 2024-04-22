@@ -1,6 +1,6 @@
 {
   "name": "phonetic",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "homepage": "https://mohamed-khachira.gitHub.io/phonetic",
   "type": "module",
