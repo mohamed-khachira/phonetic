@@ -2,7 +2,7 @@
   "name": "phonetic",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://mohamed-khachira.gitHub.io/phonetic",
+  "homepage": "https://mohamed-khachira.github.io/phonetic",
   "type": "module",
   "scripts": {
     "dev": "vite",
