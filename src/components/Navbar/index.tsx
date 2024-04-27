@@ -22,7 +22,7 @@ const Navbar = () => {
            <div className='md:flex items-center w-full justify-between py-3'>
             {/* logo section */}
             <div className='text-white font-bold text-2xl cursor-pointer flex items-center gap-1'>
-            <img src="/abc.svg" height="50px"
+            <img src="/phonetic/abc.svg" height="50px"
                     width="50px" alt="home" />
                 <span>Fun Phonics</span>
             </div>

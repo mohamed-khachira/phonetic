@@ -7,7 +7,7 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Suspense fallback={<div>Loading ...</div>}>
-			<BrowserRouter basename={process.env.PUBLIC_URL}>
+			<BrowserRouter basename={'/phonetic'}>
 				<App />
 			</BrowserRouter>
 		</Suspense>
