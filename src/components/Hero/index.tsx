@@ -36,7 +36,7 @@ const Contact = () => {
 				</ul>
 				<div className="max-w-md mt-8 lg:mt-0">
                 <div className="sm:flex items-center">
-                    <input name="EMAIL" type="email" required="required" placeholder="Entrez votre e-mail" aria-label="Email address" className="w-full px-5 py-3 text-base leading-6 transition duration-150 ease-in-out border-2 rounded-md appearance-none focus:outline-none sm:max-w-xs border-gray-200 text-gray-900 placeholder-gray-500 focus:placeholder-gray-400 bg-white"/>
+                    <input name="EMAIL" type="email" placeholder="Entrez votre e-mail" aria-label="Email address" className="w-full px-5 py-3 text-base leading-6 transition duration-150 ease-in-out border-2 rounded-md appearance-none focus:outline-none sm:max-w-xs border-gray-200 text-gray-900 placeholder-gray-500 focus:placeholder-gray-400 bg-white"/>
                     <div className="mt-3 sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                         <button type="submit" className="block px-5 py-3 text-white transition duration-100 ease-in-out bg-blue-500 border border-transparent rounded shadow-sm hover:bg-blue-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none focus:ring-opacity-50 disabled:opacity-50 disabled:cursor-not-allowed">
 						S&#39;abonner 
