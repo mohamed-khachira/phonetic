@@ -114,9 +114,6 @@ const Features = () => {
 					<span className="font-semibold text-slate-700 text-3xl mt-1">
 					Contenu de la ressource
 					</span>
-					<p className="max-w-[400px] text-center mt-4">
-					Après avoir créé gratuitement un compte, vous auriez accès aux activités suivantes:
-					</p>
 				</div>
 				<div className="grid grid-cols-1 py-5 gap-4 md:grid-cols-4 lg:grid-cols-6">
 					{featuresList.map((feature) => {

@@ -47,8 +47,8 @@ const Rituel = () => {
         <>
             <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-7">
                 <span>Aujourd'hui, c'est:</span>
-                <input className="ml-2 border border-slate-300" onChange={handleChangeDay} type="number" min="1" max="31" placeholder="jj"/>/
-                <input className="border border-slate-300" onChange={handleChangeMonth} type="number" min="1" max="12" placeholder="mm"/>/
+                <input className="ml-2 border border-slate-300" onChange={handleChangeDay} type="number" min="1" max="31" placeholder="jj"/>{'/'}
+                <input className="border border-slate-300" onChange={handleChangeMonth} type="number" min="1" max="12" placeholder="mm"/>{'/'}
                 <input className="border border-slate-300" onChange={handleChangeYear} type="number" min="2000" max="2030" placeholder="aaaa"/>
                 {correctDate === true && <Checkmark
                     color={'#008000'}

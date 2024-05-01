@@ -27,7 +27,15 @@ const About = () => {
 					</div>
 					<div className="flex items-center gap-3">
 						<CheckmarkCircleOutline color="#60a5fa" />
+						<span>Des exercices d’écoute / répétition / écoute de son audio et comparaison avec le modèle répété.</span>
+					</div>
+					<div className="flex items-center gap-3">
+						<CheckmarkCircleOutline color="#60a5fa" />
 						<span>Vous y trouverez différents modules qui présentent les voyelles et les consonnes du français d'un point de vue articulatoire.</span>
+					</div>
+					<div className="flex items-center gap-3">
+						<CheckmarkCircleOutline color="#60a5fa" />
+						<span>Des quiz basés sur la perception (par exemple : associer un rythme entendu et un énoncé, cliquer sur une syllabe matérialisée où on entend un son donné).</span>
 					</div>
 				</div>
 			</div>

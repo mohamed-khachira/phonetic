@@ -1,4 +1,4 @@
-import { QrCodeOutline} from "react-ionicons";
+import qrcode from "../../assets/qrcode.png";
 const Footer = () => {
 	return (
 		<div className="w-full flex md:flex-column-reverse flex-col md:gap-0 gap-1 items-center justify-between py-8 px-10 border-t border-slate-300 border-dashed">
@@ -11,9 +11,11 @@ const Footer = () => {
 				>
 					Scannez le QR Code avec votre smartphone
 				</span>
-				<QrCodeOutline
-					color="#60a5fa"
-					style={{ width: 60, height: 60 }}
+				<img
+					src={qrcode}
+					alt="QR Code"
+					width={77}
+					height={77}
 				/>
 			</div>
 		</div>
