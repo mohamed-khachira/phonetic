@@ -1,7 +1,13 @@
-import React from 'react'
 import { ChevronBackOutline, ChevronForwardOutline } from "react-ionicons";
 
-const Pagination = ({ handleDecrement, handleIncrement, currentPage, length }) => {
+interface PaginationProps {
+    handleDecrement: () => void;
+    handleIncrement: () => void;
+    currentPage: number;
+    length: number;
+}
+
+const Pagination = ({ handleDecrement, handleIncrement, currentPage, length } : PaginationProps) => {
     return (
         <div className="flex justify-between w-full">
             <button disabled={currentPage === 1} onClick={handleDecrement} className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l text-lg flex">

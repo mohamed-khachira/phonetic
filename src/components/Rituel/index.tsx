@@ -5,7 +5,7 @@ import Pagination from "../Pagination/index.tsx";
 
 const Rituel = () => {
     const [currentPage, setCurrentPage] = useState(1);
-    const [slidePerPage, SetSlidePerPage] = useState(1);
+    const slidePerPage = 1;
     const pages = [
         <FirstPage key={0}/>,
         <SecondPage key={1}/>
