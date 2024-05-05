@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BookOutline, BarChartOutline, HelpOutline, VideocamOutline, GameControllerOutline, MusicalNotesOutline, CalculatorOutline, HourglassOutline, BulbOutline } from "react-ionicons";
+import { BookOutline, BarChartOutline, HelpOutline, VideocamOutline, GameControllerOutline, MusicalNotesOutline, CalculatorOutline, HourglassOutline, BulbOutline, HomeOutline } from "react-ionicons";
 import Rituel from "../Rituel/index.tsx";
 
 const Features = () => {
@@ -14,7 +14,7 @@ const Features = () => {
 			),
 			title: "Rituel",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+				"Savoir écouter, formuler...",
 		},
 		{
 			icon: (
@@ -25,7 +25,7 @@ const Features = () => {
 			),
 			title: "Les alphabets",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+				"A B C D E F G...",
 		},
 		{
 			icon: (
@@ -36,7 +36,7 @@ const Features = () => {
 			),
 			title: "Les unités",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+				"Ma famille, mon école, ...",
 		},
         {
 			icon: (
@@ -47,7 +47,7 @@ const Features = () => {
 			),
 			title: "Les chants",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+				"Apprendre le français avec des chansons.",
 		},
         {
 			icon: (
@@ -58,7 +58,7 @@ const Features = () => {
 			),
 			title: "Les jeux",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+				"Apprendre le français en s'amusant .",
 		},
         {
 			icon: (
@@ -69,7 +69,7 @@ const Features = () => {
 			),
 			title: "Les contes",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+				"Apprendre le français avec des histoires.",
 		},
         {
 			icon: (
@@ -80,7 +80,7 @@ const Features = () => {
 			),
 			title: "Les projets",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+				"Apprendre les langues à travers des projets authentiques.",
 		},
         {
 			icon: (
@@ -91,7 +91,7 @@ const Features = () => {
 			),
 			title: "Le vocabulaire",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+				"Liste de vocabulaire français pour les débutants.",
 		},
         {
 			icon: (
@@ -102,12 +102,16 @@ const Features = () => {
 			),
 			title: "Les vidéos",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+				"S'appuyer sur des séquences vidéos pour apprendre le français.",
 		}
 	];
 	return (
 		<div id="alphabet" className="flex w-full py-10 md:px-[200px] px-8 flex-col gap-16 justify-center items-center">
-			{ section !== "main" && <button onClick={() => setSection('main')} className="flex mx-auto text-white bg-blue-400 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg rounded-full mt-12 shadow-md">Retour au menu principal</button>}
+			{ section !== "main" && <button onClick={() => setSection('main')} className="flex mx-auto text-white bg-blue-400 border-0 py-2 px-5 focus:outline-none hover:bg-blue-600 text-lg shadow-md"><HomeOutline
+  color={'#00000'}
+  height="30px"
+  width="30px"
+/><span className="py-1">Retour au menu principal</span></button>}
 			{ section === "main" && <div>
 				<div className="flex flex-col w-full items-center">
 					<span className="font-semibold text-blue-500">L'alphabet phonétique</span>
