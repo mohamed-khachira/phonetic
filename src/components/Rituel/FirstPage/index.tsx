@@ -83,12 +83,17 @@ const FirstPage = () => {
         setWeather(e.target.value)
         setcorrectWeather(e.target.value === "sun");
     }
+    const handleChangeDayNum = (e: ChangeEvent<HTMLInputElement>) => {
+        const d = new Date();
+        let day = d.getDate();
+        setCorrectDate(parseInt(e.target.value) === day)
+    };
     return (
         <>
-            <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-10">
+            <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-8">
                 <span>Aujourd'hui, c'est:</span>
-                {/*<input className="ml-2 border border-slate-300" onChange={handleChangeDay} type="number" min="1" max="31" placeholder="jj"/>*/}
-                <Dropdown id="jj" title="Sélectionnez le jour" data={daysOfTheWeek} onSelect={handleChangeDay} selectedId={selectedDay} style="bg-white-800 text-black border-solid border-2 border border-slate-300"/>
+                <Dropdown id="js" title="Jour de la semaine?" data={daysOfTheWeek} onSelect={handleChangeDay} selectedId={selectedDay} style="bg-white-800 text-black border-solid border-2 border border-slate-300"/>
+                <input id="jj" className="lex justify-between items-center gap-5 rounded w-full py-2 px-4 bg-white-800 text-black border-solid border-2 border border-slate-300" onChange={handleChangeDayNum} type="number" min="1" max="31" placeholder="Jour de mois?"/>
                 {/*<<input className="border border-slate-300" onChange={handleChangeMonth} type="number" min="1" max="12" placeholder="mm"/>*/}
                 <Dropdown id="mm" title="Sélectionnez le mois" data={months} onSelect={handleChangeMonth} selectedId={selectedMonth} style="bg-white-800 text-black border-solid border-2 border border-slate-300"/>
                 <input className="flex justify-between items-center gap-5 rounded w-full py-2 px-4 bg-white-800 text-black border-solid border-2 border border-slate-300" onChange={handleChangeYear} type="number" min="2000" max="2030" placeholder="Tapez l'année"/>

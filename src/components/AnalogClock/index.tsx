@@ -10,7 +10,7 @@ const AnalogClock = () => {
         <DaylightIcon isDaytime={isDaytime} />
 
         <div
-          className={`w-96 h-96 bg-slate-900 text-slate-300 shadow-xl shadow-slate-400 relative flex items-center justify-center rounded-full`}
+          className={`w-96 h-96 bg-pink-400 text-slate-300 shadow-xl shadow-slate-400 relative flex items-center justify-center rounded-full`}
         >
           {clockNumbers.map((num) => (
             <label
