@@ -29,7 +29,6 @@ import play from "../../../assets/play.png";
 import music from "../../../assets/music.gif";
 
 import FrenchAlphabet from "../../../assets/FrenchAlphabet.mp3";
-import { useState, ChangeEvent} from "react";
 
 const SongPage = () => {
     const alphabet = [
