@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BookOutline, BarChartOutline, HelpOutline, VideocamOutline, GameControllerOutline, MusicalNotesOutline, CalculatorOutline, HourglassOutline, BulbOutline, HomeOutline } from "react-ionicons";
 import Rituel from "../Rituel/index.tsx";
+import Alphabet from "../Alphabet/index.tsx";
 
 const Features = () => {
 	const [section, setSection] = useState("main");
@@ -141,6 +142,7 @@ const Features = () => {
 				</div>
 			</div>}
 			{ section === "Rituel" && <Rituel />}
+			{ section === "Les alphabets" && <Alphabet />}
 		</div>
 	);
 };

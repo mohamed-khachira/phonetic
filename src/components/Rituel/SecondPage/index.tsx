@@ -1,5 +1,5 @@
 import AnalogClock from "../../AnalogClock/index.tsx";
-import count from "../../../assets/count.svg";
+import count from "../../../assets/hand_numbers.png";
 
 const SecondPage = () => {
     return (
