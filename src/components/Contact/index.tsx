@@ -55,7 +55,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="p-2 w-full">
-                <button className="flex mx-auto text-white bg-blue-400 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg rounded-full mt-12 shadow-md">
+                <button className="flex mx-auto text-white bg-blue-400 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 text-lg mt-12 shadow-md">
                   Soumettre
                 </button>
               </div>
