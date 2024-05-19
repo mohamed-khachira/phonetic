@@ -91,6 +91,9 @@ import uSonExample from "../../../assets/alphabet_audio/380_vignette_a1_u.mp3";
 import vSon from "../../../assets/alphabet_audio/V.mp3";
 import vSonExample from "../../../assets/alphabet_audio/381_vignette_a1_v.mp3";
 
+import wSon from "../../../assets/alphabet_audio/W.mp3";
+import wSonExample from "../../../assets/alphabet_audio/382_vignette_a1_w.mp3";
+
 import xSon from "../../../assets/alphabet_audio/X.mp3";
 import xSonExample from "../../../assets/alphabet_audio/383_vignette_a1_x.mp3";
 
@@ -143,7 +146,7 @@ const SongPage = ({changeAlphabet}: ChangeAlphabetProps) => {
         { id: 't', img: t , prononciation: tSon, exemple: tSonExample, aExample: 'Thomas', phonetique: 'té'},
         { id: 'u', img: u , prononciation: uSon, exemple: uSonExample, aExample: 'Ursule', phonetique: 'u'},
         { id: 'v', img: v , prononciation: vSon, exemple: vSonExample, aExample: 'Victor', phonetique: 'vé'},
-        { id: 'w', img: w , prononciation: uSon, exemple: uSonExample, aExample: 'William', phonetique: 'double vé'},
+        { id: 'w', img: w , prononciation: wSon, exemple: wSonExample, aExample: 'William', phonetique: 'double vé'},
         { id: 'x', img: x , prononciation: xSon, exemple: xSonExample, aExample: 'Xavier', phonetique: 'iks'},
         { id: 'y', img: y , prononciation: ySon, exemple: ySonExample, aExample: 'Yasmine', phonetique: 'i grec'},
         { id: 'z', img: z , prononciation: zSon, exemple: zSonExample, aExample: 'Zohra', phonetique: 'zèd'}
