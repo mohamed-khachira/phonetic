@@ -2,7 +2,6 @@ import { useState } from "react";
 import { BookOutline, BarChartOutline, HelpOutline, VideocamOutline, GameControllerOutline, MusicalNotesOutline, CalculatorOutline, HourglassOutline, BulbOutline, HomeOutline } from "react-ionicons";
 import Rituel from "../Rituel/index.tsx";
 import Alphabet from "../Alphabet/index.tsx";
-import Chant from "../Chant/index.tsx";
 
 const Features = () => {
 	const [section, setSection] = useState("main");
@@ -24,8 +23,9 @@ const Features = () => {
 					style={{ width: 60, height: 60 }}
 				/>
 			),
-			title: "L'alphabet",
-			description: "A B C D E F G...",
+			title: "Les alphabets",
+			description:
+				"A B C D E F G...",
 		},
 		{
 			icon: (
@@ -117,10 +117,9 @@ const Features = () => {
 						))}
 					</div>
 				</div>
-			)}
-			{section === "Rituel" && <Rituel />}
-			{section === "L'alphabet" && <Alphabet />}
-			{section === "Les chants" && <Chant />}
+			</div>}
+			{ section === "Rituel" && <Rituel />}
+			{ section === "Les alphabets" && <Alphabet />}
 		</div>
 	);
 };
