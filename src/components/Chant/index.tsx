@@ -7,7 +7,6 @@ import Section5 from './Section5';
 import Section6 from './Section6';
 import Section7 from './Section7';
 import Section8 from './Section8';
-import { HomeOutline } from "react-ionicons";
 
 const Chant: React.FC = () => {
     const [section, setSection] = useState<string>("main");

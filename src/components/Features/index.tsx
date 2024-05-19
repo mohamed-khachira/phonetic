@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BookOutline, BarChartOutline, HelpOutline, VideocamOutline, GameControllerOutline, MusicalNotesOutline, CalculatorOutline, HourglassOutline, BulbOutline, HomeOutline } from "react-ionicons";
+import { BookOutline, HelpOutline, GameControllerOutline, MusicalNotesOutline, CalculatorOutline, HourglassOutline, BulbOutline, HomeOutline } from "react-ionicons";
 import Rituel from "../Rituel/index.tsx";
 import Alphabet from "../Alphabet/index.tsx";
 import Chant from "../Chant/index.tsx";
