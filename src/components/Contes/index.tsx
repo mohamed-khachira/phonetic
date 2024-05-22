@@ -26,7 +26,8 @@ const Contes = () => {
     return (
     <div className="p-1 flex flex-wrap items-center justify-center">
         {contes.map((conte) => (
-            <div className="flex-shrink-0 m-6 relative overflow-hidden bg-teal-500 rounded-lg max-w-xs shadow-lg" key={conte.id}
+            <div className={`flex-shrink-0 m-6 relative overflow-hidden bg-teal-500 rounded-lg max-w-xs shadow-lg cursor-pointer
+            ${currentVideo ===  conte.video ? 'border-solid border-2 border-indigo-600' : ''}`} key={conte.id}
             onClick={() => handleClick(conte.video)}>
                 <svg className="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none"
                     style={{transform: "scale(1.5)", opacity: "0.1"}}>
