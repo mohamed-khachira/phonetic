@@ -4,6 +4,7 @@ import Rituel from "../Rituel/index.tsx";
 import Alphabet from "../Alphabet/index.tsx";
 import Chant from "../Chant/index.tsx";
 import Vocabulaire from "../Vocabulaire/index.tsx";
+import GamesSection from "../Jeux/index.tsx";
 
 const Features = () => {
 	const [section, setSection] = useState("main");
@@ -123,6 +124,8 @@ const Features = () => {
 			{section === "L'alphabet" && <Alphabet />}
 			{ section === "Le vocabulaire" && <Vocabulaire />}
 			{section === "Les chants" && <Chant />}
+			{section === "Les jeux" && <GamesSection />}
+
 		</div>
 	);
 };
