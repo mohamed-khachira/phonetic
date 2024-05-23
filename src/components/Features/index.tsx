@@ -83,7 +83,7 @@ const Features = () => {
 	
 	];
 	return (
-		<div id="alphabet" className="flex w-full py-10 md:px-[200px] px-8 flex-col gap-16 justify-center items-center">
+		<div id="alphabet" className="flex w-full py-10 md:px-[200px] px-8 flex-col gap-12 justify-center items-center">
 			{section !== "main" && (
 				<button
 					onClick={() => setSection('main')}
@@ -121,7 +121,7 @@ const Features = () => {
 					</div>
 				</div>
 			)}
-			{section === "Rituel" && <Rituel />}
+			{section === "Rituel" && <Rituel />} 
 			{section === "L'alphabet" && <Alphabet />}
 			{ section === "Le vocabulaire" && <Vocabulaire />}
 			{section === "Les chants" && <Chant />}

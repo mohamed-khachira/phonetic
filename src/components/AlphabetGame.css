@@ -2,10 +2,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px;
+    
+    text-align: center;
+  padding: 20px;
+  border: 2px solid rgb(116, 175, 209);
+  border-radius: 15px;
+  margin: auto;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  h2 {
+    margin: 20px;
+    color: #2c3e50;
+    text-align: center;
+    
   }
   
-  .alphabet-button {
+  .alphabet-button { 
     margin: 5px;
     padding: 10px;
     font-size: 1.5em;
@@ -18,7 +31,7 @@
   }
   
   .error {
-    background-color: red;
+    background-color: #d1cd45;
     color: white;
   }
   

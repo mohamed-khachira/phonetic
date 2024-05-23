@@ -1,4 +1,3 @@
-// src/components/WordGame.tsx
 import React, { useState, useRef } from 'react';
 import '../WordGame.css';
 
@@ -56,13 +55,12 @@ import xSon from "../../assets/alphabet_audio/X.mp3";
 import ySon from "../../assets/alphabet_audio/Y.mp3";
 import zSon from "../../assets/alphabet_audio/Z 2_0.mp3";
 
-
 const alphabet = [
   { id: 'a', img: a, prononciation: aSon },
   { id: 'b', img: b, prononciation: bSon },
   { id: 'c', img: c, prononciation: cSon },
   { id: 'd', img: d, prononciation: dSon },
-  { id: 'e', img: e, prononciation: eSon },
+  { id: 'e', img: e, prononciation: eSon },  
   { id: 'f', img: f, prononciation: fSon },
   { id: 'g', img: g, prononciation: gSon },
   { id: 'h', img: h, prononciation: hSon },
@@ -91,6 +89,7 @@ const WordGame: React.FC = () => {
   const [inputValue, setInputValue] = useState('');
   const [feedback, setFeedback] = useState<string | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [showImage, setShowImage] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const currentLetter = alphabet[currentLetterIndex];
@@ -111,26 +110,29 @@ const WordGame: React.FC = () => {
   const checkAnswer = () => {
     if (inputValue === currentLetter.id) {
       setFeedback('Excellent!');
+      setShowImage(true);
       setTimeout(() => {
         setCurrentLetterIndex((currentLetterIndex + 1) % alphabet.length);
         setInputValue('');
         setFeedback(null);
-      }, 2000);
+        setShowImage(false);
+      }, 5000);
     } else {
       setFeedback('Réessayer');
     }
   };
 
   return (
-    <div className="game-container">
-      <h2>Écoutez la prononciation et écrivez la lettre</h2>
+    <div>
+            <h2><strong>Écoutez la prononciation et écrivez la lettre</strong></h2>
+    <div className="game-container " >
       <div className="letter-container">
-        <img src={currentLetter.img} alt={`Letter ${currentLetter.id}`} />
+        {showImage && <img src={currentLetter.img} alt={`Letter ${currentLetter.id}`} />}
         <button onClick={playPronunciation} disabled={isPlaying}>
-          {isPlaying ? 'Écoute...' : 'Écouter la prononciation'}
+          {isPlaying ? 'Écouter la prononciation' : 'Écouter la prononciation'}
         </button>
       </div>
-      <div>
+      <div className="input-container">
         <input
           type="text"
           value={inputValue}
@@ -141,6 +143,7 @@ const WordGame: React.FC = () => {
       </div>
       {feedback && <p className={`feedback ${feedback === 'Excellent!' ? 'correct' : 'error'}`}>{feedback}</p>}
       <audio ref={audioRef} />
+    </div>
     </div>
   );
 };

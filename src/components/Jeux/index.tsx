@@ -2,13 +2,13 @@ import { useState } from "react";
 import { GameControllerOutline, MusicalNotesOutline } from "react-ionicons";
 import WordGame from "./WordGame";
 import AlphabetGame from "./AlphabetGame";
-
+ 
 
 const GamesSection = () => {
-	const [section, setSection] = useState<"alphabet" | "word">("alphabet");
+	const [section, setSection] = useState<"alphabet" | "word">("word");
 
 	return (
-		<div id="games" className="flex w-full py-10 md:px-[200px] px-8 flex-col gap-16 justify-center items-center">
+		<div id="games" className="flex w-full  md:px-[200px] flex-col gap-2 justify-center items-center">
 		
 			<div>
 				
@@ -20,7 +20,7 @@ const GamesSection = () => {
 					>
 						<MusicalNotesOutline color="#60a5fa" style={{ width: 60, height: 60 }} />
 						<span className="font-semibold text-gray-700 text-[21px]">
-							Word Game
+							Jeux d'écoute
 						</span>
 						<span className="max-w-[360px] text-center leading-7">
 							Écoutez le mot et trouvez la bonne image.
@@ -33,7 +33,7 @@ const GamesSection = () => {
 					>
 						<GameControllerOutline color="#60a5fa" style={{ width: 60, height: 60 }} />
 						<span className="font-semibold text-gray-700 text-[21px]">
-							Alphabet Game
+							Jeux de place
 						</span>
 						<span className="max-w-[360px] text-center leading-7">
 							Placez les lettres dans l'ordre correct.

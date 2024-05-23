@@ -35,9 +35,9 @@ const AlphabetGame: React.FC = () => {
 
   return (
     <div>
-      <h2 className="alphabet-container">Disposez les lettres</h2>
+      <h2 ><strong>Disposez les lettres</strong></h2>
       <div className="alphabet-container">
-        {shuffledAlphabet.map((letter) => (
+        {shuffledAlphabet.map((letter) => ( 
           <button
             key={letter}
             className={`alphabet-button ${selectedLetters.includes(letter) ? 'correctt' : ''} ${error && !selectedLetters.includes(letter) ? 'error' : ''}`}
