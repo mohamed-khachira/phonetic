@@ -33,9 +33,9 @@ import ecole from "../../assets/unites/ecole.mp3";
 import bus from "../../assets/unites/bus.mp3";
 
 import mamanS from "../../assets/unites/maman.mp3";
-import tableS from "../../assets/unites/lit.mp3";
-import pandaS from "../../assets/unites/ecole.mp3";
-import computerS from "../../assets/unites/bus.mp3";
+import tableS from "../../assets/unites/table.mp3";
+import pandaS from "../../assets/unites/panda.mp3";
+import computerS from "../../assets/unites/computer.mp3";
 import video1 from "../../assets/unites/video1.mp4";
 import video2 from "../../assets/unites/video2.mp4";
 
