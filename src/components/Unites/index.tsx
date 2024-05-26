@@ -275,6 +275,11 @@ const Unites: React.FC = () => {
             setSection(`section${currentIndex + 1}-details`);
         }
     };
+    const handlePrevious = () => {
+        if (currentIndex !== null) {
+            setSection(`section${currentIndex + 1}-details`);
+        }
+    };
 
     const handleDetailButtonClick = (buttonIndex: number) => {
         if (currentIndex !== null) {
@@ -323,11 +328,11 @@ const Unites: React.FC = () => {
                     onButtonClick={handleDetailButtonClick}
                 />
             ) : section.endsWith('-button1') ? (
-                <ContentSection content={chantList[currentIndex!].buttons[0].content} />
+                <ContentSection content={chantList[currentIndex!].buttons[0].content} onPrevious={handlePrevious}/>
             ) : section.endsWith('-button2') ? (
-                <ContentSection content={chantList[currentIndex!].buttons[1].content} />
+                <ContentSection content={chantList[currentIndex!].buttons[1].content} onPrevious={handlePrevious}/>
             ) : section.endsWith('-button3') ? (
-                <ContentSection content={chantList[currentIndex!].buttons[2].content} />
+                <ContentSection content={chantList[currentIndex!].buttons[2].content} onPrevious={handlePrevious} />
             ) : (
                 <GenericSection 
                     color={chantList[currentIndex!].sectionColor} 
