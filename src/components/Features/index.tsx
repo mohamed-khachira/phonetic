@@ -6,6 +6,7 @@ import Chant from "../Chant/index.tsx";
 import Vocabulaire from "../Vocabulaire/index.tsx";
 import GamesSection from "../Jeux/index.tsx";
 import Contes from "../Contes/index.tsx";
+import Unites from "../Unites/index.tsx";
 
 const Features = () => {
 	const [section, setSection] = useState("main");
@@ -127,6 +128,7 @@ const Features = () => {
 			{section === "Les chants" && <Chant />}
 			{section === "Les jeux" && <GamesSection />}
 			{section === "Les contes" && <Contes />}
+			{section === "Les unités" && <Unites />}
 		</div>
 	);
 };
