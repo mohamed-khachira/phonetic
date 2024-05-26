@@ -48,11 +48,22 @@ import ballon from "../../assets/unites/ballon.jpeg";
 import orange from "../../assets/unites/orange.jpeg";
 import mouton from "../../assets/unites/mouton.jpeg";
 
+import bicyclette from "../../assets/figurines/bicyclette.png";
+import livre from "../../assets/figurines/livre.png";
+import tortue from "../../assets/figurines/tortue.png";
+import voiture from "../../assets/figurines/voiture.png";
+
+import pantalon from "../../assets/figurines/pantalon.png";
+import grandPere from "../../assets/figurines/grandPere.png";
+import montre from "../../assets/figurines/montre.png";
+import sallon from "../../assets/figurines/sallon.png"
+
 
 import QuestionSection2 from './QuestionSection2';
 import VideoSection from './VideoSection';
 import SentenceBuilder from './SentenceBuilder';
 import VideoSection2 from './VideoSection2';
+import DragAndDrop from './DragAndDrop.tsx';
 
 
 interface ChantType {
@@ -113,7 +124,32 @@ const Unites: React.FC = () => {
                             
                           ]}
                         />
-                        
+                        <DragAndDrop imagesData={[
+                                {
+                                "id": "1",
+                                "title": "Bicyclette",
+                                "img": bicyclette,
+                                "status": "todo"
+                                },
+                                {
+                                "id": "2",
+                                "title": "Voiture ",
+                                "img": voiture,
+                                "status": "todo"
+                                },
+                                {
+                                "id": "3",
+                                "title": "Tortue",
+                                "img": tortue,
+                                "status": "todo"
+                                },
+                                {
+                                "id": "4",
+                                "title": "Livre",
+                                "img": livre,
+                                "status": "todo"
+                                }
+                            ]} lettres={['i', 'u']}/>
                       </>
                     )
                   },
@@ -174,6 +210,32 @@ const Unites: React.FC = () => {
                           
                         ]}
                       />
+                      <DragAndDrop imagesData={[
+                                {
+                                "id": "1",
+                                "title": "Pantalon",
+                                "img": pantalon,
+                                "status": "todo"
+                                },
+                                {
+                                "id": "2",
+                                "title": "Grand-père",
+                                "img": grandPere,
+                                "status": "todo"
+                                },
+                                {
+                                "id": "3",
+                                "title": "Montre",
+                                "img": montre,
+                                "status": "todo"
+                                },
+                                {
+                                "id": "4",
+                                "title": "Sallon",
+                                "img": sallon,
+                                "status": "todo"
+                                }
+                            ]} lettres={['an', 'on']}/>
                       
                       
                     </>
@@ -323,7 +385,7 @@ const Unites: React.FC = () => {
             ) : section.endsWith('-details') ? (
                 <DetailSection
                     color={chantList[currentIndex!].sectionColor}
-                    text={`Details of ${chantList[currentIndex!].title}`}
+                    text={`Détails de ${chantList[currentIndex!].title}`}
                     buttons={chantList[currentIndex!].buttons}
                     onButtonClick={handleDetailButtonClick}
                 />
